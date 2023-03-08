@@ -6,16 +6,22 @@ Your friendly TA will act as the server this time around and in addition to bein
 
 The server software listens for messages and in reply to each message it asks for a new piece of information. Either `co2`, `humidity` or `temperature`.
 
-The goal is then for you to connect your devices through the gateway to the server, and send the measurements it asks for, to it.
+The goal is then for you to connect your devices through the gateway to the server, and send the measurements it asks for, to it. The data is expected to be sent as a ascii-encoded strings.
 
 Roughly the steps you are going to follow are to:
 1. get your devices up and running again and measuring air quality
 2. Figure out how to connect to a LoRaWAN gateway. For you to connect to the TA gateway, he needs some information. which?
 3. Tell him that information.
 4. start sending measurements over LoRaWAN
-5. listen for responses and react to them
+5. listen for responses
+6. measure the sensor that has been asked for
 
 The Pycom website provides some nice documentation on how to use LoRaWAN on their devices. Before enabling LoRaWAN it is important that you remember to connect the external antenna! if not you might damage your device. The correct port for the antenna is the one to the right of the big LED. 
+
+
+## Food for thought
+> - How would you compare LoRaWAN and Wi-Fi? In terms of security, bandwidth?
+>- You are communicating with the server over ascii. That's not optimal, since it wastes a lot of data. Why? How else could you do it?
 
 ## Reading from the scd30 sensor
 below is the code needed in main.py to read from the sensor. The code has graciously been provided by your fellow student Theodor, and only been adapted slightly here.
