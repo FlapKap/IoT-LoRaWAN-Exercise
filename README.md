@@ -19,6 +19,7 @@ The Pycom website provides some nice documentation on how to use LoRaWAN on thei
 
 ## Reading from the scd30 sensor
 below is the code needed in main.py to read from the sensor. The code has graciously been provided by your fellow student Theodor, and only been adapted slightly here.
+Remember this is written for Wi-Fi. LoRaWAN is slightly different so it will require some adaptation
 
 ```python3
 from network import WLAN
