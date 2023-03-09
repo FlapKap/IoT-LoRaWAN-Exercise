@@ -10,7 +10,7 @@ The goal is then for you to connect your devices through the gateway to the serv
 
 Roughly the steps you are going to follow are to:
 1. get your devices up and running again and measuring air quality
-2. Figure out how to connect to a LoRaWAN gateway. For you to connect to the TA gateway, he needs some information. which?
+2. Figure out how to connect to a LoRaWAN network stack. For you to connect to it,The TA needs some information, and so do you. which?
 3. Tell him that information.
 4. start sending measurements over LoRaWAN
 5. listen for responses
